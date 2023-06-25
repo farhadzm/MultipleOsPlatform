@@ -15,7 +15,7 @@ public static partial class FileHelper
     public const char DirectorySeparator = '/';
 }
 ```
-This way, in the `GetDirectorySeparator` method, when the operating system is Linux, the character "/" is returned, and when the operating system is Windows, the character "\\" is returned.
+This way, for `DirectorySeparator` property, when the operating system is Linux, the character "/" is returned, and when the operating system is Windows, the character "\\" is returned.
 ```CSharp
 var directorySeparator = FileHelper.DirectorySeparator;
 Console.WriteLine(".{0}Data{0}uploads{0}fileName", directorySeparator);
