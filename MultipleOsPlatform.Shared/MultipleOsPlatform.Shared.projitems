@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>f42755fb-0a29-4d81-bb93-4db1e4b32d4f</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>MultipleOsPlatform.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(OS)' != 'Unix'">
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\FileHelper.Unix.cs" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(OS)' != 'Windows_NT'">
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\FileHelper.Windows.cs">
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\FileHelper.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net7.0</TargetFramework>
+	</PropertyGroup>
+
+	<Import Project="..\MultipleOsPlatform.Shared\MultipleOsPlatform.Shared.projitems" Label="Shared" />
+
+</Project>

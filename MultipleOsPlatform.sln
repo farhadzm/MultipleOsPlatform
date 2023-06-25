@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleOsPlatform.ConsoleApplication", "MultipleOsPlatform.ConsoleApplication\MultipleOsPlatform.ConsoleApplication.csproj", "{03E60DB4-E39B-42AB-8CA0-9DAA88E72D61}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MultipleOsPlatform.Shared", "MultipleOsPlatform.Shared\MultipleOsPlatform.Shared.shproj", "{F42755FB-0A29-4D81-BB93-4DB1E4B32D4F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03E60DB4-E39B-42AB-8CA0-9DAA88E72D61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03E60DB4-E39B-42AB-8CA0-9DAA88E72D61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03E60DB4-E39B-42AB-8CA0-9DAA88E72D61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03E60DB4-E39B-42AB-8CA0-9DAA88E72D61}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B36CE33A-FB86-4C99-8C9C-E5739C2091A9}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		MultipleOsPlatform.Shared\MultipleOsPlatform.Shared.projitems*{03e60db4-e39b-42ab-8ca0-9daa88e72d61}*SharedItemsImports = 5
+		MultipleOsPlatform.Shared\MultipleOsPlatform.Shared.projitems*{f42755fb-0a29-4d81-bb93-4db1e4b32d4f}*SharedItemsImports = 13
+	EndGlobalSection
+EndGlobal
