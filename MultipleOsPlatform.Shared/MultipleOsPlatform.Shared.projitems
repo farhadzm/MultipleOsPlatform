@@ -8,10 +8,10 @@
   <PropertyGroup Label="Configuration">
     <Import_RootNamespace>MultipleOsPlatform.Shared</Import_RootNamespace>
   </PropertyGroup>
-  <ItemGroup Condition="'$(OS)' != 'Unix'">
+  <ItemGroup Condition="'$(OS)' == 'Unix'">
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\FileHelper.Unix.cs" />
   </ItemGroup>
-  <ItemGroup Condition="'$(OS)' != 'Windows_NT'">
+  <ItemGroup Condition="'$(OS)' == 'Windows_NT'">
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\FileHelper.Windows.cs">
     </Compile>
   </ItemGroup>
