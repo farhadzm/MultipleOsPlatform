@@ -15,7 +15,4 @@
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\FileHelper.Windows.cs">
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)Helpers\FileHelper.cs" />
-  </ItemGroup>
 </Project>
