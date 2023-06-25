@@ -1,14 +1,6 @@
 # MultipleOsPlatform
 Creating a FileHelper compatible with all Operation Systems. 
-```CSharp
-public static partial class FileHelper
-{
-    public static char GetDirectorySeparator()
-    {
-        return FileHelper.DirectorySeparator;
-    }
-}
-```
+
 The `FileHelper.Windows.cs` file:
 ```CSharp
 public static partial class FileHelper
